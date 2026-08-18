@@ -106,7 +106,7 @@ Watchtower is highly containerized, allowing for seamless local development and 
 The easiest way to spin up the API, UI, and Observability stack simultaneously is via Docker Compose
 ```bash
 # Clone the repository
-git clone <your-repository-url>
+git clone https://github.com/PrathamBhanushali30/watchtower-ai.git
 cd watchtower-prod
 
 # Build and start all services
