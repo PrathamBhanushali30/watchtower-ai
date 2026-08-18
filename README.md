@@ -67,3 +67,6 @@ WatchTower AI is designed with an emphasis on ML security, artifact integrity, c
 [Model File] ──> [Validate Extension & MIME] ──> [Calculate SHA-256] ──> [Store in MinIO] ──> [Register in PostgreSQL]
 
 ```
+
+### 💻 Technology Stack
+
