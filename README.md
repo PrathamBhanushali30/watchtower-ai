@@ -9,8 +9,8 @@
 
 WatchTower AI is designed with an emphasis on ML security, artifact integrity, controlled storage, API security, and containerized deployment. It provides a robust FastAPI-based layer with PostgreSQL metadata storage, S3-compatible object storage (MinIO), Docker Compose orchestration, and a GitHub Actions DevSecOps pipeline.
 
-**Project Status:** 🚧 *Prototype / Development Foundation*  
-*Currently implements the model-artifact registration and storage layer. Advanced ML security analysis, inference monitoring, and production-grade auth are on the roadmap.*
+**Project Status:** 🚧 *Completly working*  
+*Currently implements the model-artifact registration, storage layer, Advanced ML security analysis, inference monitoring and production-grade, User segregation in tools like minio, mlflow, prometheus and grafana is on the path.*
 
 ---
 
@@ -57,3 +57,13 @@ WatchTower AI is designed with an emphasis on ML security, artifact integrity, c
         │ Users          │ │ Model files  │ │ Bandit        │
         │ Model metadata │ │ Artifacts    │ │ Trivy         │
         └────────────────┘ └──────────────┘ └───────────────┘
+
+```
+
+### Model Upload Flow
+
+```text
+
+[Model File] ──> [Validate Extension & MIME] ──> [Calculate SHA-256] ──> [Store in MinIO] ──> [Register in PostgreSQL]
+
+```
